@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício de pratica</title>
+    <style> body {
+        background: blue;
+        color: white;
+        font: bold 18pt Arial;
+    }
+     </style>
+</head>
+<body>
+    <h1>Começando com DOM</h1>
+    <p>Hoje é dia 7 de setembro de 2019</p>
+    <p>Não fui no desfile.</p>
+    <script>
+        window.document.write('Olá, Mundo!')
+        //window.document.write(window.navigator.appName)
+        //window.document.write(window.document.URL)
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Esta escrito assim: ' + p1.innerText)
+        var corpo = window.document.body
+        p1.style.color = 'black'
+        corpo.style.background = 'blue' 
+    </script>
+</body>
+</html>
