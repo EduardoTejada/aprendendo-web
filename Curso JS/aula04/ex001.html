@@ -18,12 +18,12 @@
 </head>
 <body>
     <h1>Olá, Mundo!</h1>
-    <p>Hello, World!</p>
     <script>
-        //window.alert('Bem Vindo!')
-        //window.confirm('Do you like JS?')
-        nome ==String(window.prompt('What is your name?'))
+        //var num = window.prompt('Digite um número:') ---> Ocorre uma CONCATENAÇÃO, e não uma adição
+        var num1 = Number(window.prompt('Digite um número: '))
+        var num2 = Number(window.prompt('Digite outro número: '))
+        var suc = num1 + num2
+        window.alert('O sucessor é ' + suc)
     </script>
-    <p>(nome)</p>
 </body>
 </html>
